@@ -12,8 +12,9 @@ Scenario Outline: Factorial UI
   Then I see 'The factorial of <number> is: <result>'
 
  Examples: Numbers to calculate
-   | number | result                |
-   | 10     | 3628800               |
-   | 170    | 7.257415615307999e+306|
-   | 171    | Infinity              |
+   | number | result                 |
+   | 21     | 51090942171709440000   |
+   | 22     | 1.1240007277776077e+21 |
+   | 170    | 7.257415615307999e+306 |
+   | 171    | Infinity               |
 
