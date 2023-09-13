@@ -15,3 +15,9 @@ allure-behave = "*"
 [requires]
 python_version = "3.11"
 python_full_version = "3.11.5"
+
+[scripts]
+tests = "behave -f allure_behave.formatter:AllureFormatter -o %allure_result_folder% ./features"
+ui = "behave -f allure_behave.formatter:AllureFormatter -o %allure_result_folder% ./features --tags=ui"
+api = "behave -f allure_behave.formatter:AllureFormatter -o %allure_result_folder% ./features --tags=api"
+report = "allure serve %allure_result_folder%"
