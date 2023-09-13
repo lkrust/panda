@@ -1,6 +1,5 @@
 import requests
-
-BASE_URL = 'https://pandaqaetest.pythonanywhere.com'
+from helpers.common import BASE_URL
 
 def post(number):
     url = f'{BASE_URL}/factorial'
