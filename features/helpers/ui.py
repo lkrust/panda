@@ -1,6 +1,6 @@
+import allure
 from helpers.common import BASE_URL
 from behave import *
-import allure
 
 NUMBER_INPUT = 'number'
 CALCULATE_BUTTON = 'getFactorial'
