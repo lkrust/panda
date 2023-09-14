@@ -9,12 +9,12 @@ def step_impl(context):
 
 @given('I enter {number} on the field')
 def enter_number(context, number):
-    ui.get_number_field(context).send_keys(number)
+    ui.get_number_field(context, number)
 
 
 @when('I click Calculate! button')
 def calculate(context):
-    ui.calculate_button(context).click()
+    ui.calculate_button(context)
 
 
 @then('I see \'The factorial of {number} is: {result}\'')

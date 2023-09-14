@@ -6,9 +6,9 @@ name = "pypi"
 [packages]
 behave = "*"
 requests = "*"
-webdriver-manager = "*"
 selenium = "*"
 allure-behave = "*"
+webdriver-manager = "*"
 
 [dev-packages]
 
