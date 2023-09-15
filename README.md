@@ -1,6 +1,6 @@
-* Behave test *
+# Behave test #
 
-** Bugs on factorial calculator **
+## Bugs on factorial calculator ##
 
 Go to [BUGS.md](https://github.com/lkrust/panda/blob/main/BUGS.md)
 
