@@ -31,6 +31,15 @@ def get_result_text(context, number, result):
     allure_attach(context, file_name)
 
 
+def click_on_link(context, element):
+    context.driver.find_element('link text', element).click()
+    allure_attach(context, element)
+
+
+def get_body_text(context):
+    return context.driver.find_element('tag name', 'body').text
+
+
 def allure_attach(context, file_name):
     path = f'%screenshots%/{file_name}.png'
     context.driver.save_screenshot(path)

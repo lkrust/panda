@@ -18,3 +18,13 @@ Scenario Outline: Factorial UI
    | 170    | 7.257415615307999e+306 |
    | 171    | Infinity               |
 
+@ui
+Scenario: Terms and conditions
+Given I click on Terms and Conditions
+Then I should see 'This is the terms and conditions document. We are not yet ready with it. Stay tuned!'
+
+
+@ui @hol
+Scenario: Privacy
+Given I click on Privacy
+Then I should see 'This is the privacy document. We are not yet ready with it. Stay tuned!'

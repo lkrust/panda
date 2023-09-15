@@ -21,3 +21,14 @@ def calculate(context):
 def result(context, number, result):
     ui.get_result_text(context, number, result)
 
+
+@given('I click on {page}')
+def step_impl(context, page):
+    ui.click_on_link(context, page)
+    
+@then('I should see \'{expected_text}\'')
+def result(context, expected_text):
+    actual_text = ui.get_body_text(context)
+    print(expected_text)
+    print(actual_text)
+    assert expected_text == actual_text
